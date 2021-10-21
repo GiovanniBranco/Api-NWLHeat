@@ -2,7 +2,6 @@ import prismaClient from "../prisma";
 
 class Get3LastMessagesService {
   async execute(user_id: string) {
-    //Crio a mensagem que será cadastrada;
     const messages = await prismaClient.message.findMany({
       where: {
         user_id: user_id,

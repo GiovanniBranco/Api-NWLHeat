@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import http from "http";
 import { Server } from "socket.io";
-import { router } from "./routes";
+import { router } from "./routes/routes";
 
 const app = express();
 app.use(express.json());
